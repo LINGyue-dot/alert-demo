@@ -1,12 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import AlertSdk from "./AlertSDK/core";
+import 'antd/dist/reset.css';
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
+
+AlertSdk.init({
+  project: "project1",
+  env: "test",
+  version: "1.0.0",
+});
+
 root.render(
   <React.StrictMode>
     <App />
