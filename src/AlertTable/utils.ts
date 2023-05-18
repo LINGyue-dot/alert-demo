@@ -47,7 +47,7 @@ export async function getSourceCode(
  * @param errorData
  */
 export async function getSourMapData(data: AlertDataProps, fileName: string) {
-  const baseUrl = "http://localhost:3200/maps";
+  const baseUrl = "http://123.249.35.73:3200/maps";
   const { project, env, version } = data;
   const sourceMapName = `${project}-${env}-${version}-${fileName}.map`;
   const url = baseUrl + "/" + sourceMapName;

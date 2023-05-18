@@ -10,7 +10,7 @@ const AlertStore: {
     version: "1.0.0",
     env: "test",
   },
-  baseUrl: "http://localhost:3200",
+  baseUrl: "http://123.249.35.73:3200",
 };
 
 export default AlertStore;
